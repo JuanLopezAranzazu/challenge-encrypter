@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge Encrypter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <header>
+        <img src="./assets/Logo.svg" alt="Logo" />
+      </header>
+      <div class="main-content">
+        <div class="content">
+          <div class="content-input-text">
+            <textarea
+              id="input-text"
+              placeholder="Ingrese texto aqui."
+            ></textarea>
+            <div class="rules">
+              <img src="./assets/Advertencia.svg" alt="Advertencia" />
+              <p>Solo letras minusculas sin acentos</p>
+            </div>
+            <div class="btn-options">
+              <button class="btn btn-primary" id="btn-encrypter">
+                Encripter
+              </button>
+              <button class="btn btn-secondary" id="btn-decrypt">
+                Decrypt
+              </button>
+            </div>
+          </div>
+          <div class="content-output-text">
+            <div class="not-result">
+              <img src="./assets/Muñeco.svg" alt="Muñeco" />
+              <h3>Ningún mensaje fue encontrado</h3>
+              <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div class="result">
+              <textarea
+                readonly
+                id="output-text"
+                placeholder="Ingresa el texto que desees encriptar o desencriptar."
+              ></textarea>
+              <button class="btn btn-secondary" id="btn-copy">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <p>Copyright &copy; 2023 by Juan Esteban Lopez Aranzazu</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
